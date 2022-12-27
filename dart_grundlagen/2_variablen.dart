@@ -1,11 +1,9 @@
+void main() {
+  int alter = 32; //Initialisierung
 
-void main(){
-  
-  int alter = 32;    //Initialisierung 
+  late int alter_2; // Deklaration // Später zuweisung
 
-  late int alter_2;  // Deklaration
-
-  alter_2 = 48;      //Zuweisung  
+  alter_2 = 48; //Zuweisung
 
   print(alter);
 
@@ -14,5 +12,4 @@ void main(){
   alter_2 = 50;
 
   print(alter_2);
-
 }
