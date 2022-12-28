@@ -77,4 +77,33 @@ void main() {
   print("var as String :$stringType");
   print("var as String2 :$stringType2");
   print("var as String2 :$stringType3");
+
+  var idontKnowHowIm;
+  print(idontKnowHowIm.runtimeType);
+  print(idontKnowHowIm);
+  idontKnowHowIm = "Im String";
+  print(idontKnowHowIm.runtimeType);
+  print(idontKnowHowIm);
+  idontKnowHowIm = 2;
+  print(idontKnowHowIm.runtimeType);
+  print(idontKnowHowIm);
+  idontKnowHowIm = 3.2;
+  print(idontKnowHowIm.runtimeType);
+  print(idontKnowHowIm);
+
+  //If a variable is declared as a dynamic, its type can change over time.
+  dynamic a = 'abc'; //initially it's a string
+  a = 123; //then we assign an int value to it
+  a = true; //and then a bool
+
+  //If you declare variable as a var, once assigned type can not change.
+  var b = 'cde'; //b is a string, and its type can not change
+  b = 123; //this will not compile
+  //can not assign an int to the string variable
+
+  //BUT, if you state a var without initializing, it becomes a dynamic:
+  var aa; //this is actually a dynamic type
+  aa = 2; //assigned an int to it
+  aa = 'hello!'; //assigned a string to it
+  print(aa); //prints out 'hello'
 }
